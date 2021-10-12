@@ -37,8 +37,6 @@ function branchOrderModifiedRule(root) {
   };
 }
 
-chrome.declarativeNetRequest.updateDynamicRules({removeRuleIds: [1]});
-
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     const host = getHost(sender.tab.url);
