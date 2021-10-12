@@ -1,0 +1,19 @@
+{
+  "name": "Remove Bitbucket Annoyances",
+  "description": "Make Bitbucket less annoying",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "all_frames": true,
+      "js": ["content_script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["activeTab", "storage", "declarativeNetRequest"],
+  "host_permissions": ["<all_urls>"]
+}
