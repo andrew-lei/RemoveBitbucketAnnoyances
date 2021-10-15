@@ -3,6 +3,7 @@ const branchDialogMap = new Map(
     [['inline-dialog-repository-layout-revision-selector-dialog', 'inline-dialog-repository-layout-revision-selector-dialog-search-input']
     ,['inline-dialog-sourceBranch-dialog', 'sourceBranchDialog-search-input']
     ,['inline-dialog-targetBranch-dialog', 'targetBranchDialog-search-input']
+    ,['inline-dialog-toRef-dialog', 'inline-dialog-toRef-dialog-search-input']
     ]);
 if (isBitbucket) {
     const config = { childList: true, subtree: true };
